@@ -17,7 +17,9 @@ Re-created my personal portfolio V2 with React to render it's components.
 
 - Github repo: https://github.com/michelletrn/react-portfolio
 
-- Deployed link: 
+- Deployed link: https://michelletrn.github.io/react-portfolio/
+
+![portfolio screenshot](./src/assets/michelletrn.github.io_react-portfolio_.png)
 
 ## License
 
