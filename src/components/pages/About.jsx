@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { avatar } from '../../assets';
 
 const About = ({ setCurrentPage}) => {
   return (
@@ -36,7 +37,7 @@ const About = ({ setCurrentPage}) => {
         <div class="about-img">
           <img
             id="profile"
-            src="https://via.placeholder.com/300"
+            src={avatar}
             alt="placeholder img"
           />
           <br />

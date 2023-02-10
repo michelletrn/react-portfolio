@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("about");
@@ -18,6 +19,7 @@ export default function PortfolioContainer() {
       )}
       {currentPage === "portfolio" && <Portfolio />}
       {currentPage === "contact" && <Contact />}
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { resume } from "../assets";
 
 const links = ["about", "portfolio", "contact"];
 
@@ -25,7 +26,7 @@ function Navbar({ currentPage, setCurrentPage }) {
           </li>
         ))}
         <li>
-          <a target='_blank' href="#" class="resume">
+          <a target='_blank' href={resume} class="resume">
             resume
           </a>
         </li>
