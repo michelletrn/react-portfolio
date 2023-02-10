@@ -1,18 +1,21 @@
 {
   "files": {
     "main.css": "//michelletrn.github.io/react-portfolio/static/css/main.3c7e8635.css",
-    "main.js": "//michelletrn.github.io/react-portfolio/static/js/main.685f2f1c.js",
+    "main.js": "//michelletrn.github.io/react-portfolio/static/js/main.b2d08f4c.js",
     "static/js/787.a2cb61a6.chunk.js": "//michelletrn.github.io/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/prof-img.jpg": "//michelletrn.github.io/react-portfolio/static/media/prof-img.701a004d0836154b0458.jpg",
+    "static/media/weatherdash.png": "//michelletrn.github.io/react-portfolio/static/media/weatherdash.cf25a1c620cc608e6e78.png",
+    "static/media/codequiz.png": "//michelletrn.github.io/react-portfolio/static/media/codequiz.731c2306010c39fde60a.png",
     "static/media/resume2_9.pdf": "//michelletrn.github.io/react-portfolio/static/media/resume2_9.eaf500ded4a2b3fdcb36.pdf",
+    "static/media/note-taker.png": "//michelletrn.github.io/react-portfolio/static/media/note-taker.bc15e203262f6fb6d513.png",
     "static/media/logo.svg": "//michelletrn.github.io/react-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "//michelletrn.github.io/react-portfolio/index.html",
     "main.3c7e8635.css.map": "//michelletrn.github.io/react-portfolio/static/css/main.3c7e8635.css.map",
-    "main.685f2f1c.js.map": "//michelletrn.github.io/react-portfolio/static/js/main.685f2f1c.js.map",
+    "main.b2d08f4c.js.map": "//michelletrn.github.io/react-portfolio/static/js/main.b2d08f4c.js.map",
     "787.a2cb61a6.chunk.js.map": "//michelletrn.github.io/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c7e8635.css",
-    "static/js/main.685f2f1c.js"
+    "static/js/main.b2d08f4c.js"
   ]
 }
