@@ -5,16 +5,17 @@ import Contact from "./pages/Contact";
 import Navbar from "./Navbar";
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("about");
 
-  //const handlePageChange = (page) => setCurrentPage(page);
   console.log(currentPage);
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
+      {/* passing the currentPage from state  as prop and the function to update it */}
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {/* Here we are calling the renderPage method which will return a component  */}
-      {currentPage === "about" && <About />}
+      {currentPage === "about" && (
+        <About currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      )}
       {currentPage === "portfolio" && <Portfolio />}
       {currentPage === "contact" && <Contact />}
     </div>

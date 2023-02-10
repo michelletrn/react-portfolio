@@ -3,13 +3,13 @@ import React from "react";
 const links = ["about", "portfolio", "contact"];
 
 function Navbar({ currentPage, setCurrentPage }) {
+  
   return (
     <header id="navbar-container">
       <a
-        href="#"
         id="name"
-        onClick={() => setCurrentPage("About")}
-        className={currentPage === "About" ? "nav-link active" : "nav-link"}
+        onClick={() => setCurrentPage("about")}
+        className={currentPage === "about" ? "nav-link active" : "nav-link"}
       >
         mt
       </a>
@@ -25,12 +25,9 @@ function Navbar({ currentPage, setCurrentPage }) {
           </li>
         ))}
         <li>
-          <button
-            class="resume"
-            onclick={"location.href='assets/MT_resume_2-2023.pdf'"}
-          >
-            Resume
-          </button>
+          <a target='_blank' href="#" class="resume">
+            resume
+          </a>
         </li>
       </ul>
     </header>

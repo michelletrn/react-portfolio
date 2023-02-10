@@ -1,17 +1,16 @@
 import React from 'react'
 
-const About = () => {
+const About = ({ setCurrentPage}) => {
   return (
     <section class="about" id="about">
       <div class="about-content">
         <div class="about-text">
           <h1>Nice to meet you,</h1>
-          <h1>I am Michelle</h1>
-          <br />
+          <h1>I am Michelle,</h1>
 
-          <p>
-            I am a <span>full-stack developer.</span>
-          </p>
+          <h2>
+            <span>a full-stack developer.</span>
+          </h2>
 
           <span id="more-about">
             <p>A little bit about me...</p>
@@ -31,11 +30,10 @@ const About = () => {
 
           <br />
           <button class="contact-btn">
-            {" "}
-            <a href="#contact">Get in Touch</a>
+            <a onClick={() => setCurrentPage('contact')}>Get in Touch</a>
           </button>
         </div>
-        <div class="about-left">
+        <div class="about-img">
           <img
             id="profile"
             src="https://via.placeholder.com/300"

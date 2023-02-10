@@ -80,6 +80,7 @@ body {
 #name:hover {
   color: var(--lgt-pink);
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .navbar-list {
@@ -100,61 +101,64 @@ body {
 .navbar-list li:hover {
   color: black;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .resume {
-  background-color: var(--drk-pink);
   opacity: 100%;
   font-weight: 700;
-  font-size: 17px;
-  color: white;
+  font-size: 20px;
+  color: rgb(255, 84, 104);
   border: none;
   border-radius: 5px;
-  height: 30px;
-  width: 85px;
-  margin: 0 15px;
   animation: fade-in 2s ease;
 }
 .resume:hover {
   cursor: pointer;
-  background-color: var(--drk-pink);
-  opacity: 80%;
+  opacity: 60%;
   transition: all 0.5s ease;
 }
 
 /* about pg */
 .about {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 120px 10%;
+  padding: 10% 10%;
   justify-content: center;
 }
 .about-content {
   display: flex;
+  column-gap: 5%;
+  justify-content: center;
+ 
 }
-.about-left {
-  margin: 0 5%;
+.about-img {
   text-align: center;
+  flex-basis: 42.5%;
 }
-.about-left img {
+.name-sm {
+  display: none;
+}
+.about-img img {
   border-radius: 300px;
-  width: 450px;
+  max-width: 450px;
+  width:100%;
   opacity: 80%;
   transition: all 0.5s ease;
   box-shadow: 10px 15px 20px rgb(82, 82, 82);
   animation: slide-up 1s ease, fade-in ease 3s;
 }
-.about-left img:hover {
+.about-img img:hover {
   opacity: 100%;
   transition: all 0.5s ease;
 }
 .about-text {
   display: flex;
+  flex-basis: 42.5%;
   flex-direction: column;
   justify-content: center;
-  margin: 0 5%;
 }
 .about-text p {
   line-height: 1.8;
@@ -168,31 +172,49 @@ body {
   line-height: 1.5;
   animation: fade-in 3s ease, slide-right 1s ease;
 }
+.about-text h2 {
+  animation: fade-in 3s ease;
+  font-size: 30px;
+  font-weight: 500;
+}
 .about-text #more-about {
   line-height: 3.5;
   font-weight: bold;
 }
 
 .contact-btn {
-  background-color: var(--lgt-green);
+  background-color: transparent;
   font-size: 15px;
-  color: white;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid var(--lgt-pink);
+  border-radius: 20px;
   cursor: pointer;
   height: 35px;
-  width: 100px;
+  width: 120px;
   align-content: center;
   animation: fade-in 3s ease;
+  opacity: 70%;
+}
+.contact-btn a {
+  color: black;
+  font-weight: 600;
+}
+.contact-btn:hover a {
+  color: white;
+}
+.contact-btn:hover {
+  opacity: 70%;
+  background-color: var(--drk-pink);
+  border: var(--drk-pink);
+  transition: 1s ease;
 }
 
 /* project pg */
 .projects {
-  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 100px 15%;
+  padding: 100px 10%;
+  animation: slide-up 1s ease, fade-in ease 2s;
 }
 .projects h2 {
   font-size: 35px;
@@ -201,20 +223,28 @@ body {
 }
 .project-container {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
+  justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2.5rem;
 }
 .project {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 5px;
   display: block;
+  max-width: 400px;
+  max-height: 300px;
+}
+.project:hover {
+  transform: scale(1.03);
+  transition: all .5s ease;
 }
 .project img {
-  min-width: 400px;
-  max-height: 200px;
-  border-radius: 8px;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 5px;
   transition: all 0.2s ease;
 }
 .project:hover img {
@@ -232,7 +262,7 @@ body {
 .project-info {
   width: 100%;
   height: 30%;
-  background: linear-gradient(transparent, var(--lgt-green));
+  background: linear-gradient(transparent, rgb(255, 197, 203));
   position: absolute;
   border-radius: 8px;
   left: 0;
@@ -253,12 +283,13 @@ body {
 
 /* contact pg */
 .contact {
-  height: 100vh; /*will need to adjust*/
+  /* height: 100vh; will need to adjust */
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 100px 15%;
+  animation: slide-up 1s ease, fade-in ease 2s;
 }
 .contact h2 {
   font-size: 35px;
@@ -268,12 +299,29 @@ body {
 .contact-content {
   border: 1px solid black;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 .contact-content p {
   text-align: center;
 }
 .contact form {
   margin: 2%;
+}
+.social-icons {
+  font-size: 50px;
+  width: 250px;
+  display: inline-flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.social-icons li {
+  cursor: pointer;
+}
+.social-icons li a {
+  color: black;
 }
 
 /* for mobile view */
@@ -283,41 +331,65 @@ body {
   display: none;
 }
 
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (width <= 1250px) {
+  #navbar-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+  .about-content {
+    flex-direction: column-reverse;
+    row-gap: 2rem;
+    padding-top: 7%;
+    text-align: center;
+  }
+  .about-img {
+    max-width: 80%;
+    align-self: center;
+    text-align: center;
+  }
+  .about-text h1{
+    font-size: 40px;
+  }
+  .about-text h2{
+    font-size: 20px;
+    line-height: 2;
+  }
+  .about-text p{
+    font-size: 15px;
+  }
+  .contact-btn {
+    align-self: center;
+  }
+  .projects {
+    padding-top: 13%;
+  }
+  .contact {
+    padding-top: 13%;
+  }
+  .section-header {
+    font-size: 40px;
+    font-weight: 600;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (width <= 650px) {
+  .about-content{
+    padding-top: 35%;
   }
-  to {
-    transform: rotate(360deg);
+    .about-text h2{
+    font-size: 20px;
+    line-height: 2;
   }
-} */
+  .about-text p{
+    font-size: 15px;
+    line-height: 2;
+  }
+  .projects {
+    padding-top: 35%;
+  }
+  .contact {
+    padding-top: 35%;
+  }
+}

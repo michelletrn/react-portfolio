@@ -4,9 +4,9 @@ const Portfolio = () => {
   return (
     <section class="projects" id="projects">
       <h2 class="section-header">Portfolio</h2>
-      <div class="project-container row">
-        <div class="project project-card col">
-          <img src="https://via.placeholder.com/300" class="project-img" />
+      <div class="project-container">
+        <div class="project project-card">
+          <img src="/assets/project-img-placeholder.png" class="project-img" />
           <div class="project-info">
             <h3>Project Title</h3>
             <p>T1 T2 T3</p>
@@ -26,8 +26,8 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div class="project project-card col">
-          <img src="https://via.placeholder.com/300" class="project-img" />
+        <div class="project project-card">
+          <img src="/assets/project-img-placeholder.png" class="project-img" />
           <div class="project-info">
             <h3>Project Title</h3>
             <p>T1 T2 T3</p>
@@ -47,8 +47,8 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div class="project project-card col">
-          <img src="https://via.placeholder.com/300" class="project-img" />
+        <div class="project project-card">
+          <img src="/assets/project-img-placeholder.png" class="project-img" />
           <div class="project-info">
             <h3>Project Title</h3>
             <p>T1 T2 T3</p>
@@ -68,10 +68,8 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-      {/* </div>
-      <div class="project-container row"> */}
-        <div class="project project-card col">
-          <img src="https://via.placeholder.com/300" class="project-img" />
+        <div class="project project-card">
+          <img src="/assets/project-img-placeholder.png" class="project-img" />
           <div class="project-info">
             <h3>Project Title</h3>
             <p>T1 T2 T3</p>
@@ -91,8 +89,8 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div class="project project-card col">
-          <img src="https://via.placeholder.com/300" class="project-img" />
+        <div class="project project-card">
+          <img src="/assets/project-img-placeholder.png" class="project-img" />
           <div class="project-info">
             <h3>Project Title</h3>
             <p>T1 T2 T3</p>
@@ -112,8 +110,8 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div class="project project-card col">
-          <img src="https://via.placeholder.com/300" class="project-img" />
+        <div class="project project-card">
+          <img src="/assets/project-img-placeholder.png" class="project-img" />
           <div class="project-info">
             <h3>Project Title</h3>
             <p>T1 T2 T3</p>
