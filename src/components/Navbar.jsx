@@ -14,10 +14,11 @@ function Navbar({ currentPage, setCurrentPage }) {
       >
         mt
       </a>
-      <ul class="navbar-list">
-        {links.map((link) => (
+      <ul className="navbar-list">
+        {links.map((link, index) => (
           <li
             onClick={() => setCurrentPage(link)}
+            key={index}
             className={
               currentPage === link ? "nav-link active navbar-list" : "nav-link"
             }
@@ -26,7 +27,7 @@ function Navbar({ currentPage, setCurrentPage }) {
           </li>
         ))}
         <li>
-          <a target='_blank' href={resume} class="resume">
+          <a target='_blank' href={resume} className="resume">
             resume
           </a>
         </li>

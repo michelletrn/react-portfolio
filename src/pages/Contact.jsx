@@ -6,9 +6,9 @@ const handleLink = (link) => {
 
 const Contact = () => {
   return (
-    <section class="contact" id="contact">
-      <h2 class="section-header">Contact</h2>
-      <div class="contact-content">
+    <section className="contact" id="contact">
+      <h2 className="section-header">Contact</h2>
+      <div className="contact-content">
         <p>
           Get in touch via email with the button below, or click on the social
           icons!
@@ -17,7 +17,7 @@ const Contact = () => {
           <button>Email Me!</button>
         </a>
 
-        <ul class="social-icons">
+        <ul className="social-icons">
           <li>
             <a
               id="linkedin-icon"
@@ -25,7 +25,7 @@ const Contact = () => {
                 handleLink("https://www.linkedin.com/in/m-chelletran/")
               }
             >
-              <i class="bx bxl-linkedin"></i>
+              <i className="bx bxl-linkedin"></i>
             </a>
           </li>
           <li>
@@ -33,7 +33,7 @@ const Contact = () => {
               id="github-icon"
               onClick={() => handleLink("https://github.com/michelletrn")}
             >
-              <i class="bx bxl-github"></i>
+              <i className="bx bxl-github"></i>
             </a>
           </li>
         </ul>

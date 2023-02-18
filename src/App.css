@@ -60,7 +60,7 @@ body {
 
 #navbar-container {
   width: 100%;
-  position: fixed;
+  position: relative;
   background: transparent;
   top: 0;
   right: 0;
@@ -365,7 +365,7 @@ footer p {
   .about-content {
     flex-direction: column-reverse;
     row-gap: 2rem;
-    padding-top: 7%;
+    padding-top: 2%;
     text-align: center;
   }
   .about-img {
@@ -387,10 +387,10 @@ footer p {
     align-self: center;
   }
   .projects {
-    padding-top: 13%;
+    padding-top: 5%;
   }
   .contact {
-    padding-top: 13%;
+    padding-top: 5%;
   }
   .section-header {
     font-size: 40px;
@@ -400,7 +400,7 @@ footer p {
 
 @media screen and (width <= 650px) {
   .about-content {
-    padding-top: 35%;
+    padding-top: 15%;
   }
   .about-text h2 {
     font-size: 20px;
@@ -411,9 +411,9 @@ footer p {
     line-height: 2;
   }
   .projects {
-    padding-top: 35%;
+    padding-top: 15%;
   }
   .contact {
-    padding-top: 35%;
+    padding-top: 15%;
   }
 }

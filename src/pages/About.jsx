@@ -1,11 +1,11 @@
-import React from 'react';
-import { avatar } from '../../assets';
+import React from "react";
+import { avatar } from "../assets";
 
-const About = ({ setCurrentPage}) => {
+const About = ({ setCurrentPage }) => {
   return (
-    <section class="about" id="about">
-      <div class="about-content">
-        <div class="about-text">
+    <section className="about" id="about">
+      <div className="about-content">
+        <div className="about-text">
           <h1>Nice to meet you,</h1>
           <h1>I am Michelle,</h1>
 
@@ -30,21 +30,17 @@ const About = ({ setCurrentPage}) => {
           </p>
 
           <br />
-          <button class="contact-btn">
-            <a onClick={() => setCurrentPage('contact')}>Get in Touch</a>
+          <button className="contact-btn">
+            <a onClick={() => setCurrentPage("contact")}>Get in Touch</a>
           </button>
         </div>
-        <div class="about-img">
-          <img
-            id="profile"
-            src={avatar}
-            alt="placeholder img"
-          />
+        <div className="about-img">
+          <img id="profile" src={avatar} alt="placeholder img" />
           <br />
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default About
+export default About;
