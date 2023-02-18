@@ -35,13 +35,6 @@
 
 /* palette */
 :root {
-  --navy: #192a44;
-  --drk-navy: #0f1a2b;
-  --lgt-blue: #84dcc6;
-  --lgt-green: #a5dec4;
-  --lgt-pink: #ffa69e;
-  --drk-pink: #ff686b;
-
   --silver-pink: #d4bfc0ff;
   --pale-pink: #f4dbe0ff;
   --queen-pink: #dfc8d2ff;
@@ -125,7 +118,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 10% 10%;
+  padding: 7% 10%;
   justify-content: center;
 }
 .about-content {
@@ -212,7 +205,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 100px 10%;
+  padding: 50px 10%;
   animation: slide-up 1s ease, fade-in ease 2s;
 }
 .projects h2 {
@@ -223,7 +216,7 @@ body {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
@@ -242,8 +235,10 @@ body {
 }
 .project img {
   max-width: 400px;
-  height: 300px;
+  height: 275px;
   border-radius: 5px;
+  opacity: 90%;
+
   transition: all 0.2s ease;
 }
 .project:hover img {
@@ -289,7 +284,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 100px 15%;
+  padding: 50px 10%;
   animation: slide-up 1s ease, fade-in ease 2s;
 }
 .contact h2 {
@@ -335,7 +330,7 @@ footer {
 footer p {
   font-size: 12px;
 }
-.social-icons-footer{
+.social-icons-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -365,7 +360,6 @@ footer p {
   .about-content {
     flex-direction: column-reverse;
     row-gap: 2rem;
-    padding-top: 2%;
     text-align: center;
   }
   .about-img {
@@ -387,10 +381,10 @@ footer p {
     align-self: center;
   }
   .projects {
-    padding-top: 5%;
+    padding-top: 2%;
   }
   .contact {
-    padding-top: 5%;
+    padding-top: 2%;
   }
   .section-header {
     font-size: 40px;
@@ -400,7 +394,7 @@ footer p {
 
 @media screen and (width <= 650px) {
   .about-content {
-    padding-top: 15%;
+    padding-top: 10%;
   }
   .about-text h2 {
     font-size: 20px;
@@ -411,9 +405,9 @@ footer p {
     line-height: 2;
   }
   .projects {
-    padding-top: 15%;
+    padding-top: 7%;
   }
   .contact {
-    padding-top: 15%;
+    padding-top: 7%;
   }
 }

@@ -1,5 +1,5 @@
 import projectPlaceholder from '../assets/project-img-placeholder.png';
-import resume from '../assets/resume2_9.pdf';
+import resume from '../assets/MTran-resume.pdf';
 import avatar from '../assets/prof-img.jpg';
 import noteTaker from '../assets/note-taker.png';
 import codeQuiz from '../assets/codequiz.png';
