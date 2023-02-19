@@ -30,7 +30,7 @@ const About = ({ setCurrentPage }) => {
           </p>
 
           <br />
-          <button className="contact-btn">
+          <button className="cont-btn">
             <a onClick={() => setCurrentPage("contact")}>Get in Touch</a>
           </button>
         </div>

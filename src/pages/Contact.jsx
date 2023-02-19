@@ -14,7 +14,7 @@ const Contact = () => {
           icons!
         </p>
         <a href="mailto:tranmichelle997@gmail.com" >
-          <button>Email Me!</button>
+          <button className="email-btn">Email Me!</button>
         </a>
 
         <ul className="social-icons">

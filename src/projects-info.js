@@ -3,7 +3,7 @@ import { projectPlaceholder, noteTaker, codeQuiz, weatherDash, recipefinder } fr
 const projects = [
   {
     id: 1,
-    title: "recipefinder | Front-end",
+    title: "recipefinder",
     tech: "MERN Stack | Stripe | JWT",
     description:
       "Receipe app where users search recipes by searching by name, ingredient, cuisine, and category. Once logged in, users gain the ability to save their recipes to their personal profiles and email their shopping list. This application also has Stripe implemented were users can add the ingredient items to their cart and checkout.",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Self Journal Post | Back-end",
+    title: "Self Journal Post",
     tech: "Handlebars | MySQL | Express",
     description:
       "Journal posting application that requires user authentication. Users can see latest news articles, read/post/comment other users entries.",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Note Taker | Back-end",
+    title: "Note Taker",
     tech: "Express",
     description:
       "Note-taking application where users can create, delete, and open notes created.",
