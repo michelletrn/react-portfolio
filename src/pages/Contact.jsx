@@ -9,10 +9,12 @@ const Contact = () => {
     <section className="contact" id="contact">
       <h2 className="section-header">Contact</h2>
       <div className="contact-content">
-        <p>
+        <h3>
           Get in touch via email with the button below, or click on the social
           icons!
-        </p>
+        </h3>
+        <p>Email: tranmichelle997@gmail.com</p>
+        <br/>
         <a href="mailto:tranmichelle997@gmail.com" >
           <button className="email-btn">Email Me!</button>
         </a>
