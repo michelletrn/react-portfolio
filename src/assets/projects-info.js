@@ -1,4 +1,11 @@
-import { projectPlaceholder, noteTaker, codeQuiz, weatherDash, recipefinder } from "./assets";
+import {
+  projectPlaceholder,
+  noteTaker,
+  codeQuiz,
+  weatherDash,
+  recipefinder,
+  selfjournal,
+} from ".";
 
 const projects = [
   {
@@ -6,7 +13,7 @@ const projects = [
     title: "recipefinder",
     tech: "MERN Stack | Stripe | JWT",
     description:
-      "Receipe app where users search recipes by searching by name, ingredient, cuisine, and category. Once logged in, users gain the ability to save their recipes to their personal profiles and email their shopping list. This application also has Stripe implemented were users can add the ingredient items to their cart and checkout.",
+      "Recipe app where users search recipes by searching by name, ingredient, cuisine, and category. Once logged in, users gain the ability to save their recipes to their personal profiles and email their shopping list. This application also has Stripe implemented were users can add the ingredient items to their cart and checkout.",
     link: "https://k-meal-planner.herokuapp.com/",
     github: "https://github.com/michelletrn/k-meal-planner",
     photo: recipefinder,
@@ -14,13 +21,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "Self Journal Post",
-    tech: "Handlebars | MySQL | Express",
+    title: "Self Journal Post v2",
+    tech: "Handlebars | MySQL | Express | Cloudinary",
     description:
-      "Journal posting application that requires user authentication. Users can see latest news articles, read/post/comment other users entries.",
-    link: "https://self-journal-post.herokuapp.com/",
-    github: "https://github.com/jennahopeclem/self-journal",
-    photo: projectPlaceholder,
+      "The Self Journal Post is a web application that allows users to create and share their journal entries with pictures. It uses MySQL and Sequelize for the database, Handlebars as the view engine, Node.js, and Express.js to build REST API.",
+    link: "https://selfjournalpost.herokuapp.com/",
+    github: "https://github.com/michelletrn/selfjournalpost",
+    photo: selfjournal,
     alt: "Journal app screenshot",
   },
   {
@@ -28,7 +35,7 @@ const projects = [
     title: "Note Taker",
     tech: "Express",
     description:
-      "Note-taking application where users can create, delete, and open notes created.",
+      "Note-taking application where users can create, save, delete, and open notes created. It uses Node.js and Express.js to build the server-side of the application.",
     link: "https://note-taker-app-mt.herokuapp.com/",
     github: "https://github.com/michelletrn/note-taker",
     photo: noteTaker,

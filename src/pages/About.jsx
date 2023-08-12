@@ -6,11 +6,11 @@ const About = ({ setCurrentPage }) => {
     <section className="about" id="about">
       <div className="about-content">
         <div className="about-text">
-          <h1>Nice to meet you,</h1>
-          <h1>I am Michelle,</h1>
+          <h1>Hi,</h1>
+          <h1>I'm Michelle</h1>
 
           <h2>
-            <span>a full-stack developer.</span>
+            <span>Full Stack Developer | Registered Nurse</span>
           </h2>
 
           <span id="more-about">
