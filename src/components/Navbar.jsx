@@ -1,7 +1,8 @@
 import React from "react";
-import { resume } from "../assets";
+import { mtlogo } from "../assets";
 
-const links = ["about", "portfolio", "contact"];
+
+const links = ["home" ,"about", "portfolio", "contact"];
 
 function Navbar({ currentPage, setCurrentPage }) {
   
@@ -12,7 +13,7 @@ function Navbar({ currentPage, setCurrentPage }) {
         onClick={() => setCurrentPage("about")}
         className={currentPage === "about" ? "nav-link active" : "nav-link"}
       >
-        mt
+        <img src={mtlogo} id="logo"/>
       </a>
       <ul className="navbar-list">
         {links.map((link, index) => (
@@ -20,17 +21,17 @@ function Navbar({ currentPage, setCurrentPage }) {
             onClick={() => setCurrentPage(link)}
             key={index}
             className={
-              currentPage === link ? "nav-link active navbar-list" : "nav-link"
+              currentPage === link ? "nav-link active" : "nav-link"
             }
           >
             {link}
           </li>
         ))}
-        <li>
+        {/* <li>
           <a target='_blank' href={resume} className="resume">
             resume
           </a>
-        </li>
+        </li> */}
       </ul>
     </header>
   );

@@ -1,45 +1,38 @@
 import React from "react";
-import { avatar } from "../assets";
+import { abt } from "../assets";
 
 const About = ({ setCurrentPage }) => {
   return (
-    <section className="about" id="about">
-      <div className="about-content">
+    <>
+      <section className="about">
+        {/* <div className="about-content"> */}
         <div className="about-text">
-          <h1>Hi,</h1>
-          <h1>I'm Michelle</h1>
-
-          <h2>
-            <span>Full Stack Developer | Registered Nurse</span>
-          </h2>
-
-          <span id="more-about">
-            <p>A little bit about me...</p>
-          </span>
-
+          <h2>about</h2>
           <p>
             With a nursing degree and 2 years of experience in healthcare, I
             recently completed a coding bootcamp at Rutgers where I developed
             skills in computer science, algorithms, data structures,
-            browser-based technologies, and server-side development. My
-            coursework covered a variety of languages, including JavaScript,
+            browser-based technologies, and server-side development.
+            <br />
+            <br />
+            My coursework covered a variety of languages, including JavaScript,
             HTML/CSS, React.js, and MongoDB, as well as API design, user
             authentication, and Git/Heroku deployment. With my strong foundation
             and eagerness to learn and improve, I am confident in my ability to
             excel in the software development field.
           </p>
-
-          <br />
-          <button className="cont-btn">
-            <a onClick={() => setCurrentPage("contact")}>Get in Touch</a>
-          </button>
         </div>
         <div className="about-img">
-          <img id="profile" src={avatar} alt="placeholder img" />
+          <img id="profile" src={abt} alt="placeholder img" />
           <br />
         </div>
+        {/* </div> */}
+      </section>
+      <div className="skills">
+        <h2>technologies</h2>
+        <div></div>
       </div>
-    </section>
+    </>
   );
 };
 

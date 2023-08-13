@@ -6,6 +6,8 @@ import codeQuiz from '../assets/codequiz.png';
 import weatherDash from '../assets/weatherdash.png';
 import recipefinder from '../assets/recipefinder.png';
 import selfjournal from '../assets/journalpost.png';
+import mtlogo from "../assets/mtlogo.png";
+import abt from "../assets/abt.jpg"
+import home from "../assets/home.jpg"
 
-
-export { projectPlaceholder, resume, avatar, noteTaker, codeQuiz, weatherDash, recipefinder, selfjournal };
+export { projectPlaceholder, resume, avatar, noteTaker, codeQuiz, weatherDash, recipefinder, selfjournal, mtlogo, abt, home };

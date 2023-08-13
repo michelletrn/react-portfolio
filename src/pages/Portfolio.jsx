@@ -1,6 +1,7 @@
 import React from "react";
 import { projects } from "../assets/projects-info";
 
+
 const Portfolio = () => {
   return (
     <section className="projects" id="projects">
