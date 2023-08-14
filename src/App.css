@@ -50,7 +50,7 @@
   --drk-pink: rgb(250, 61, 74);
 
   --background: #FAF5F5ff;
-  --text: #1D1D1Dff;
+  --text: rgb(122, 111, 100);
   --headingsLinks: #D08E7Fff;
   --accent: #F4C3B3ff;
 }
@@ -125,14 +125,14 @@ body {
   opacity: 100%;
   font-weight: 700;
   font-size: 20px;
-  color: rgb(255, 84, 104);
+  color: var(--headingsLinks);
   border: none;
   border-radius: 5px;
   animation: fade-in 2s ease;
 }
 .resume:hover {
   cursor: pointer;
-  opacity: 60%;
+  color: var(--accent);
   transition: all 0.5s ease;
 }
 
@@ -142,7 +142,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 7% 15%;
+  padding: 6% 15%;
   justify-content: center;
 }
 .home-content {
@@ -156,7 +156,7 @@ body {
   opacity: 80%;
 }
 
-.home-img img, .about-img img {
+.home-img img {
   border-radius: 300px;
   max-width: 450px;
   width: 100%;
@@ -178,7 +178,6 @@ body {
 p {
   line-height: 1.6;
   font-size: 16px;
-  animation: fade-in ease 4s;
   font-weight: 300;
 }
 .home-text h1 {
@@ -187,9 +186,12 @@ p {
   line-height: 1.5;
   animation: fade-in 3s ease, slide-right 1s ease;
 }
+.home-text p, .home-text h2 {
+  animation: fade-in ease 4s;
+}
+
 /* all h2 tags */
  h2 {
-  animation: fade-in 3s ease;
   opacity: 60%;
   font-size: 30px;
   font-weight: 600;
@@ -245,6 +247,7 @@ p {
   flex-direction: row;
   justify-content: center;
   margin: 4% 15% 2.5% 10%;
+  animation: fade-in ease 1s;
 }
 .about-text {
   width: 50%;
@@ -257,12 +260,18 @@ p {
 .about-img {
   width: 30%;
 }
-.about-img img {
-  width: 100%;
-}
+
 .about-text h2 {
   font-size: 36px;
   color: var(--headingsLinks);
+}
+.about-img img {
+  border-radius: 300px;
+  max-width: 450px;
+  width: 100%;
+  transition: all 0.5s ease;
+  box-shadow: 10px 15px 20px rgb(82, 82, 82);
+  animation: fade-in ease 4s;
 }
 
 /* skills section */
@@ -284,8 +293,8 @@ p {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 50px 10%;
-  animation: slide-up 1s ease, fade-in ease 2s;
+  padding: 0px 10%;
+  animation: fade-in ease 2s;
 }
 .projects h2 {
   font-size: 35px;
@@ -295,7 +304,6 @@ p {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  /* padding-top: 20px; */
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
@@ -304,7 +312,7 @@ p {
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(116, 116, 116, 0.127);
-  border-radius: 10px;
+  border-radius: 3px;
   display: block;
   max-width: 400px;
   max-height: 350px;
@@ -317,7 +325,7 @@ p {
 .project img {
   max-width: 400px;
   height: 300px;
-  border-radius: 5px;
+  border-radius: 3px;
   opacity: 60%;
   object-fit: cover;
   transition: all 0.2s ease;
@@ -345,7 +353,7 @@ p {
   font-weight: 500;
   background: linear-gradient(transparent, rgba(255, 151, 161, 0.831), rgb(255, 151, 162));
   position: absolute;
-  border-radius: 8px;
+  border-radius: 3px;
   left: 0;
   bottom: 0;
   overflow: hidden;
@@ -399,9 +407,6 @@ p {
 }
 .social-icons li {
   cursor: pointer;
-}
-.social-icons li a {
-  color: var(--brn-pink);
 }
 
 footer {
@@ -503,4 +508,43 @@ footer p {
   .project-info {
     height: 23%;
   }
+}
+
+
+/* content container */
+#sidebar {
+  position: absolute;
+  margin-right: 3%;
+  left: 90%;
+  bottom: 20%;
+  opacity: 90%;
+}
+
+#sidebar:after {
+  content:"";
+  width: 300px;
+  height: 1px;
+  display: block;
+  opacity: 30%;
+  background: var(--text);
+  rotate: 90deg;
+  position: absolute;
+  margin-right: 3%;
+  right: -170%;
+  bottom: -60%;
+  opacity: 50%;
+}
+
+#sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sidebar li {
+  margin: 15px;
+}
+
+#sidebar i {
+  font-size: 40px;
 }

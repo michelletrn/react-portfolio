@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return (
       <footer>
-        <ul className="social-icons-footer">
+        {/* <ul className="social-icons-footer">
           <li>
             <a
               id="linkedin-icon"
@@ -22,7 +22,7 @@ function Footer() {
               <i className="bx bxl-github"></i>
             </a>
           </li>
-        </ul>
+        </ul> */}
         <p>created by Michelle Tran</p>
       </footer>
     );
