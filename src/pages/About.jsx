@@ -23,54 +23,50 @@ const About = ({ setCurrentPage }) => {
               Hobbies: Games ( mostly Valorant ), Gymming, Singing, Hanging out
               with my family
             </p>
-            <br />
 
-            {/* <p>Front-end: HTML/CSS | React | Bootstrap | Materialize | Tailwind | </p>
-            <p>Back-end: </p>
-            <p>Tools: </p> */}
           </div>
           <div className="about-img">
             <img id="profile" src={abt} alt="placeholder img" />
           </div>
         </section>
+        <div id="table">
+          <h2>skills</h2>
+          <table>
+            <tr>
+              <th>Front-end</th>
+              <td>HTML/CSS</td>
+              <td>React</td>
+              <td>Handlebars</td>
+              <td>Bootstrap</td>
+              <td>Materialize</td>
+              <td>Tailwind</td>
+            </tr>
+          </table>
+          <br />
+          <table>
+            <tr>
+              <th>Back-end</th>
+              <td>Javascript (Node.js)</td>
+              <td>Express.js</td>
+              <td>MySQL</td>
+              <td>MongoDB</td>
+              <td>Authentication</td>
+            </tr>
+          </table>
+          <br />
+          <table>
+            <tr>
+              <th>Tools</th>
+              <td>Node Package Manager (NPM)</td>
+              <td>Git/Github</td>
+              <td>Heroku</td>
+              <td>Figma</td>
+              <td>Wordpress</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div id="table">
-        <h2>skills</h2>
-      <table>
-        <tr>
-          <th>Front-end</th>
-          <td>HTML/CSS</td>
-          <td>React</td>
-          <td>Handlebars</td>
-          <td>Bootstrap</td>
-          <td>Materialize</td>
-          <td>Tailwind</td>
-        </tr>
-      </table>
-      <br />
-      <table>
-        <tr>
-          <th>Back-end</th>
-          <td>Javascript (Node.js)</td>
-          <td>Express.js</td>
-          <td>MySQL</td>
-          <td>MongoDB</td>
-          <td>Authentication</td>
-        </tr>
-      </table>
-      <br />
-      <table>
-        <tr>
-          <th>Tools</th>
-          <td>Node Package Manager (NPM)</td>
-          <td>Git/Github</td>
-          <td>Heroku</td>
-          <td>Figma</td>
-          <td>Wordpress</td>
-        </tr>
-      </table>
-      </div>
-      
+
     </>
   );
 };
