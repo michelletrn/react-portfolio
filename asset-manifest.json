@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.a8433358.css",
-    "main.js": "/react-portfolio/static/js/main.5956f2dc.js",
+    "main.css": "/react-portfolio/static/css/main.48231cef.css",
+    "main.js": "/react-portfolio/static/js/main.5ded26b5.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/abt.jpg": "/react-portfolio/static/media/abt.a8339c7ec9475c325bc2.jpg",
+    "static/media/home.jpg": "/react-portfolio/static/media/home.ece174253097ecba7829.jpg",
     "static/media/journalpost.png": "/react-portfolio/static/media/journalpost.416bc47576f237f116f5.png",
     "static/media/prof-img.jpg": "/react-portfolio/static/media/prof-img.701a004d0836154b0458.jpg",
     "static/media/recipefinder.png": "/react-portfolio/static/media/recipefinder.cc0ce1e215ba66aaddc5.png",
@@ -12,12 +14,12 @@
     "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.bc15e203262f6fb6d513.png",
     "static/media/logo.svg": "/react-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react-portfolio/index.html",
-    "main.a8433358.css.map": "/react-portfolio/static/css/main.a8433358.css.map",
-    "main.5956f2dc.js.map": "/react-portfolio/static/js/main.5956f2dc.js.map",
+    "main.48231cef.css.map": "/react-portfolio/static/css/main.48231cef.css.map",
+    "main.5ded26b5.js.map": "/react-portfolio/static/js/main.5ded26b5.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8433358.css",
-    "static/js/main.5956f2dc.js"
+    "static/css/main.48231cef.css",
+    "static/js/main.5ded26b5.js"
   ]
 }
