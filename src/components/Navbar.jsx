@@ -2,7 +2,7 @@ import React from "react";
 import { mtlogo } from "../assets";
 
 
-const links = ["home" ,"about", "portfolio", "contact"];
+const links = ["home" ,"about", "portfolio"];
 
 function Navbar({ currentPage, setCurrentPage }) {
   
@@ -10,8 +10,8 @@ function Navbar({ currentPage, setCurrentPage }) {
     <header id="navbar-container">
       <a
         id="name"
-        onClick={() => setCurrentPage("about")}
-        className={currentPage === "about" ? "nav-link active" : "nav-link"}
+        onClick={() => setCurrentPage("home")}
+        className={currentPage === "home" ? "nav-link active" : "nav-link"}
       >
         <img src={mtlogo} id="logo"/>
       </a>
@@ -27,11 +27,6 @@ function Navbar({ currentPage, setCurrentPage }) {
             {link}
           </li>
         ))}
-        {/* <li>
-          <a target='_blank' href={resume} className="resume">
-            resume
-          </a>
-        </li> */}
       </ul>
     </header>
   );

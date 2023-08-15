@@ -13,7 +13,7 @@ const projects = [
     title: "recipefinder",
     tech: "MERN Stack | Stripe | JWT",
     description:
-      "Recipe app where users search recipes by searching by name, ingredient, cuisine, and category. Once logged in, users gain the ability to save their recipes to their personal profiles and email their shopping list. This application also has Stripe implemented were users can add the ingredient items to their cart and checkout.",
+      "Search recipes by searching by name, ingredient, cuisine, and category. Users can save their recipes to their personal profiles, email their shopping list, add the ingredient items to their cart and checkout.",
     link: "https://k-meal-planner.herokuapp.com/",
     github: "https://github.com/michelletrn/k-meal-planner",
     photo: recipefinder,
@@ -24,7 +24,7 @@ const projects = [
     title: "Self Journal Post v2",
     tech: "Handlebars | MySQL | Express | Cloudinary",
     description:
-      "The Self Journal Post is a web application that allows users to create and share their journal entries with pictures. It uses MySQL and Sequelize for the database, Handlebars as the view engine, Node.js, and Express.js to build REST API.",
+      "Users can create and share their journal entries. Cloudinary implemented to allow photo uploads. It uses MySQL and Sequelize for the database, Handlebars as the view engine, Node.js, and Express.js to build REST API.",
     link: "https://selfjournalpost.herokuapp.com/",
     github: "https://github.com/michelletrn/selfjournalpost",
     photo: selfjournal,
@@ -62,7 +62,7 @@ const projects = [
     github: "https://github.com/michelletrn/weather-dashboard",
     photo: weatherDash,
     alt: "Note taker app screenshot",
-  },
+  }
 ];
 
 export { projects };

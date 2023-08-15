@@ -5,7 +5,7 @@ import { projects } from "../assets/projects-info";
 const Portfolio = () => {
   return (
     <section className="projects" id="projects">
-      <h2 className="section-header">Projects</h2>
+      <h2 className="section-header">projects</h2>
       <div className="project-container">
         {projects.map((project) => (
           <div className="project project-card" key={project.id}>

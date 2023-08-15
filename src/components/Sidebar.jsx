@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <div id="sidebar">
       <ul>
-        <li>
+        <li id="cv">
           <a target="_blank" href={resume} className="resume">
             CV
           </a>
