@@ -22,7 +22,7 @@ const projects = [
   {
     id: 2,
     title: "Self Journal Post v2",
-    tech: "Handlebars | MySQL | Express | Cloudinary",
+    tech: "MySQL | Express | Cloudinary",
     description:
       "Users can create and share their journal entries. Cloudinary implemented to allow photo uploads. It uses MySQL and Sequelize for the database, Handlebars as the view engine, Node.js, and Express.js to build REST API.",
     link: "https://selfjournalpost.herokuapp.com/",
@@ -52,17 +52,17 @@ const projects = [
     photo: codeQuiz,
     alt: "Quiz game screenshot",
   },
-  {
-    id: 5,
-    title: "Weather Dashboard",
-    tech: "API | Bootstrap",
-    description:
-      "Application that displays a 5-day weather forecast based on user's inputted city. For each search a user makes, a button will render under 'Searched Cities' and can be clicked to reveal the forcast for that city.",
-    link: "https://michelletrn.github.io/weather-dashboard/",
-    github: "https://github.com/michelletrn/weather-dashboard",
-    photo: weatherDash,
-    alt: "Note taker app screenshot",
-  }
+  // {
+  //   id: 5,
+  //   title: "Weather Dashboard",
+  //   tech: "API | Bootstrap",
+  //   description:
+  //     "Application that displays a 5-day weather forecast based on user's inputted city. For each search a user makes, a button will render under 'Searched Cities' and can be clicked to reveal the forcast for that city.",
+  //   link: "https://michelletrn.github.io/weather-dashboard/",
+  //   github: "https://github.com/michelletrn/weather-dashboard",
+  //   photo: weatherDash,
+  //   alt: "Note taker app screenshot",
+  // }
 ];
 
 export { projects };

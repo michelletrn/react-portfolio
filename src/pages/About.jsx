@@ -1,7 +1,7 @@
 import React from "react";
 import { abt } from "../assets";
 
-const About = ({ setCurrentPage }) => {
+const About = () => {
   return (
     <>
       <div className="about-content">
@@ -9,7 +9,7 @@ const About = ({ setCurrentPage }) => {
           <div className="about-text">
             <h2>about</h2>
             <p>
-              With a nursing degree and 2 years of experience in healthcare, I
+              With a Bachelor's degree in Nursing and 2 years of experience in healthcare, I
               recently completed a coding bootcamp at Rutgers where I developed
               skills in building web applications from front end to back end.
               <br />
@@ -33,7 +33,8 @@ const About = ({ setCurrentPage }) => {
           <h2>skills</h2>
           <table>
             <tr>
-              <th>Front-end</th>
+              <th>Front-end</th> </tr>
+              <tr>
               <td>HTML/CSS</td>
               <td>React</td>
               <td>Handlebars</td>
@@ -45,7 +46,8 @@ const About = ({ setCurrentPage }) => {
           <br />
           <table>
             <tr>
-              <th>Back-end</th>
+              <th>Back-end</th></tr>
+              <tr>
               <td>Javascript (Node.js)</td>
               <td>Express.js</td>
               <td>MySQL</td>
@@ -56,8 +58,9 @@ const About = ({ setCurrentPage }) => {
           <br />
           <table>
             <tr>
-              <th>Tools</th>
-              <td>Node Package Manager (NPM)</td>
+              <th>Tools</th></tr>
+              <tr>
+              <td>Node PM (NPM)</td>
               <td>Git/Github</td>
               <td>Heroku</td>
               <td>Figma</td>

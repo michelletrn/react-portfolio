@@ -11,7 +11,7 @@ const Home = ({ setCurrentPage }) => {
         </div>
         <div className="home-text">
           <h1>
-            Hello, I'm <span>Michelle</span>
+            Hi, <span>I'm Michelle</span>
           </h1>
           <h2>Full Stack Developer | Registered Nurse</h2>
           <p>
@@ -24,7 +24,7 @@ const Home = ({ setCurrentPage }) => {
 
           <br />
           <button className="cont-btn">
-            <a onClick={() => setCurrentPage("contact")}>learn more</a>
+            <a onClick={() => setCurrentPage("about")}>learn more</a>
           </button>
         </div>
       </div>
