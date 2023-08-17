@@ -145,6 +145,10 @@ body {
   cursor: pointer;
 }
 
+#navbar-container>ul>li.nav-link.active {
+  color: var(--headingsLinks);
+}
+
 .resume {
   font-weight: 700;
   font-size: 18px;
@@ -241,16 +245,19 @@ h2 {
   align-content: center;
   animation: fade-in 3s ease;
 }
+
 .cont-btn:hover {
   background-color: var(--headingsLinks);
   border: var(--drk-pink);
   transition: 1s ease;
   opacity: 70%;
 }
+
 .cont-btn a {
   color: var(--text);
   font-weight: 600;
 }
+
 .cont-btn:hover a {
   color: white;
 }
@@ -259,6 +266,7 @@ h2 {
 .about-content {
   animation: fade-in ease 2s;
 }
+
 .about {
   display: flex;
   flex-direction: row;
@@ -406,12 +414,15 @@ footer {
 footer p {
   font-size: 15px;
 }
+
 .social-icons-footer li {
   display: inline;
   margin: 0% 1%;
-  opacity: 50%;  
+  opacity: 50%;
 }
-.social-icons-footer li i, .social-icons-footer a {
+
+.social-icons-footer li i,
+.social-icons-footer a {
   font-size: 24px;
 }
 
@@ -465,12 +476,15 @@ footer p {
   .projects {
     padding-top: 2%;
   }
+
   .project-container {
     column-gap: 1rem;
   }
+
   .about-img {
     display: none;
   }
+
   .about-content {
     padding: 3% 0 6% 0;
   }
@@ -478,12 +492,15 @@ footer p {
   .about-text {
     width: 90%
   }
+
   .about p {
     font-size: 20px;
   }
+
   #table td {
     font-size: 19px;
   }
+
   #table {
     width: 85%;
   }
@@ -497,21 +514,30 @@ footer p {
   .navbar-list:after {
     display: none;
   }
+
   #sidebar {
     display: none;
   }
+
   .home {
     padding: 0;
   }
+
   .social-icons-footer li {
-    opacity: 100%;  
+    opacity: 100%;
   }
-  .social-icons-footer li i, .social-icons-footer a {
+
+  .social-icons-footer li i,
+  .social-icons-footer a {
     font-size: 34px;
   }
 }
 
 @media screen and (width <=650px) {
+  #navbar-container {
+    flex-direction: column;
+  }
+
   .home-content {
     padding-top: 10%;
   }
@@ -546,6 +572,11 @@ footer p {
   .about-text {
     width: 100%;
   }
+
+  footer {
+    margin:0;
+    padding: 0%;
+  }
 }
 
 
@@ -558,6 +589,7 @@ footer p {
   bottom: 30%;
   opacity: 90%;
 }
+
 #sidebar:after {
   content: "";
   width: 300px;
@@ -572,20 +604,25 @@ footer p {
   bottom: -85%;
   opacity: 50%;
 }
+
 #sidebar ul {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #sidebar li {
   margin: 11px;
 }
+
 #sidebar i {
   font-size: 40px;
 }
+
 #sidebar li:hover {
   animation: floating 1.5s ease-in-out infinite;
 }
+
 #cv {
   border: 4px solid var(--text);
   border-radius: 7px;
@@ -615,6 +652,7 @@ td {
   padding: 3px 5px;
   text-align: center;
 }
+
 td:last-child {
   border-right: none;
 }
