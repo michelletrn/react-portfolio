@@ -6,11 +6,11 @@ function Footer() {
     <footer>
       <ul className="social-icons-footer">
         <h2>Contact</h2>
-        <li>
+        {/* <li>
           <a target="_blank" href={resume}>
             CV
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             id="email-icon"

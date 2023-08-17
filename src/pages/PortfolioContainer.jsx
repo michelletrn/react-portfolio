@@ -13,11 +13,11 @@ export default function PortfolioContainer() {
 
   console.log(currentPage);
   return (
-    <div>
+    <>
       {/* passing the currentPage from state  as prop and the function to update it */}
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {/* Here we are calling the renderPage method which will return a component  */}
-      <div id="content-container">
+      {/* <div id="content-container"> */}
         {currentPage === "home" && (
         <Home currentPage={currentPage} setCurrentPage={setCurrentPage} />
       )}
@@ -25,9 +25,9 @@ export default function PortfolioContainer() {
       {currentPage === "portfolio" && <Portfolio />}
       {currentPage === "contact" && <Contact />}
       <Sidebar/>
-      </div>
+      {/* </div> */}
       
       <Footer />
-    </div>
+    </>
   );
 }

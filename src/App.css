@@ -67,6 +67,11 @@
   color: var(--text);
 }
 
+#root {
+  max-width: 1599px;
+  margin: auto;
+}
+
 /* palette */
 :root {
   --background: #FAF5F5ff;
@@ -158,10 +163,11 @@ body {
 /* home pg */
 .home {
   height: auto;
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   padding: 3% 15% 6% 11%;
+  margin: 3% 0 6% 0;
   justify-content: center;
 }
 
@@ -294,7 +300,7 @@ h2 {
 
 /* project pg */
 .projects {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   flex-direction: column;
   padding: 0px 10%;
@@ -394,7 +400,7 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  padding: 0 15% 0 11%;
 }
 
 footer p {
@@ -403,9 +409,10 @@ footer p {
 .social-icons-footer li {
   display: inline;
   margin: 0% 1%;
+  opacity: 50%;  
 }
 .social-icons-footer li i, .social-icons-footer a {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 /* for mobile view */
@@ -484,6 +491,8 @@ footer p {
 
 }
 
+
+
 @media screen and (width <=900px) {
   .navbar-list:after {
     display: none;
@@ -493,6 +502,12 @@ footer p {
   }
   .home {
     padding: 0;
+  }
+  .social-icons-footer li {
+    opacity: 100%;  
+  }
+  .social-icons-footer li i, .social-icons-footer a {
+    font-size: 34px;
   }
 }
 
@@ -540,7 +555,7 @@ footer p {
   position: fixed;
   margin-right: 3%;
   left: 90%;
-  bottom: 20%;
+  bottom: 30%;
   opacity: 90%;
 }
 #sidebar:after {
@@ -554,7 +569,7 @@ footer p {
   position: absolute;
   margin-right: 3%;
   right: -195%;
-  bottom: -60%;
+  bottom: -85%;
   opacity: 50%;
 }
 #sidebar ul {
@@ -606,4 +621,5 @@ td:last-child {
 
 th {
   border-right: none;
+  padding: 1%;
 }

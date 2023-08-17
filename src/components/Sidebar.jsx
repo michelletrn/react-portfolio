@@ -5,11 +5,11 @@ function Sidebar() {
   return (
     <div id="sidebar">
       <ul>
-        <li id="cv">
+        {/* <li id="cv">
           <a target="_blank" href={resume} className="resume">
             CV
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             id="email-icon"

@@ -1,5 +1,4 @@
 import projectPlaceholder from '../assets/project-img-placeholder.png';
-import resume from '../assets/MichelleTran-resume.pdf';
 import avatar from '../assets/prof-img.jpg';
 import noteTaker from '../assets/note-taker.png';
 import codeQuiz from '../assets/codequiz.png';
@@ -10,4 +9,4 @@ import mtlogo from "../assets/mtlogo.png";
 import abt from "../assets/abt.jpg"
 import home from "../assets/home.jpg"
 
-export { projectPlaceholder, resume, avatar, noteTaker, codeQuiz, weatherDash, recipefinder, selfjournal, mtlogo, abt, home };
+export { projectPlaceholder, avatar, noteTaker, codeQuiz, weatherDash, recipefinder, selfjournal, mtlogo, abt, home };
