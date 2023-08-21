@@ -6,6 +6,7 @@ import Home from "./Home";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
+// import Menu from "../components/Menu";
 import "../App.css";
 
 export default function PortfolioContainer() {
@@ -15,18 +16,19 @@ export default function PortfolioContainer() {
   return (
     <>
       {/* passing the currentPage from state  as prop and the function to update it */}
+      {/* <Menu currentPage={currentPage} setCurrentPage={setCurrentPage} /> */}
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {/* <div id="content-container"> */}
-        {currentPage === "home" && (
+      {currentPage === "home" && (
         <Home currentPage={currentPage} setCurrentPage={setCurrentPage} />
       )}
       {currentPage === "about" && <About />}
       {currentPage === "portfolio" && <Portfolio />}
       {currentPage === "contact" && <Contact />}
-      <Sidebar/>
+      <Sidebar />
       {/* </div> */}
-      
+
       <Footer />
     </>
   );
