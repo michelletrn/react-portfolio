@@ -637,7 +637,7 @@ footer p {
   display: block;
   opacity: 30%;
   background: var(--text);
-  rotate: 90deg;
+  transform: rotate(90deg);
   position: absolute;
   margin-right: 3%;
   right: -195%;
