@@ -1,0 +1,73 @@
+.about-content {
+    animation: fade-in ease 2s;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4% 15% 2% 12.5%;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text p {
+    width: 90%;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.about-img {
+    width: 30%;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: var(--headingsLinks);
+}
+
+.about-img img {
+    max-width: 450px;
+    width: 100%;
+    margin: 15% 0;
+    opacity: 80%;
+    transition: all 0.5s ease;
+    box-shadow: 10px 15px 20px rgb(82, 82, 82);
+    animation: fade-in ease 2s;
+    animation: blob 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+#table {
+    margin: 0 12% 3% 12%;
+    padding-bottom: 5%;
+}
+
+#table h2 {
+    font-size: 30px;
+    color: var(--headingsLinks);
+    margin: 0 5%;
+}
+
+table {
+    text-align: left;
+    width: 70%;
+    margin: 0 5%;
+}
+
+td {
+    border-right: 1px solid var(--text);
+    padding: 3px 5px;
+    text-align: center;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+th {
+    border-right: none;
+    padding: 1%;
+}

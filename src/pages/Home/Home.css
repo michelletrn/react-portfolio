@@ -1,0 +1,80 @@
+.home {
+    height: auto;
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    padding: 3% 15% 6% 11%;
+    margin: 3% 0 6% 0;
+    justify-content: center;
+}
+
+.home-content {
+    display: flex;
+    column-gap: 10%;
+    padding-bottom: 40px;
+    justify-content: center;
+}
+
+.home-img {
+    text-align: center;
+    flex-basis: 42.5%;
+}
+
+.home-img img {
+    max-width: 450px;
+    width: 100%;
+    opacity: 90%;
+    box-shadow: 10px 15px 20px rgb(82, 82, 82);
+    animation: slide-up 1s ease, fade-in ease 3s;
+    animation: blob 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.home-text {
+    display: flex;
+    flex-basis: 43%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.5;
+    animation: fade-in 3s ease, slide-right 1s ease;
+}
+
+.home-text p,
+.home-text h2 {
+    animation: fade-in ease 4s;
+}
+
+
+/* learn more btn home pg */
+.cont-btn {
+    background-color: var(--accent);
+    font-size: 20px;
+    border: 2px solid var(--accent);
+    border-radius: 40px;
+    cursor: pointer;
+    height: 45px;
+    width: 145px;
+    align-content: center;
+    animation: fade-in 3s ease;
+}
+
+.cont-btn:hover {
+    background-color: var(--headingsLinks);
+    border: var(--drk-pink);
+    transition: 1s ease;
+    opacity: 70%;
+}
+
+.cont-btn a {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.cont-btn:hover a {
+    color: white;
+}

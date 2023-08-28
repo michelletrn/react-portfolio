@@ -1,0 +1,15 @@
+.menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.385);
+    border-radius: 8px;
+    position: fixed;
+    right: 0;
+    margin: 5% 3%;
+    z-index: 1;
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}

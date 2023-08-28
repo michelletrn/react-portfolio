@@ -1,5 +1,6 @@
 import React from "react";
-import { home } from "../assets";
+import { home } from "../../assets";
+import "./Home.css"
 
 const Home = ({ setCurrentPage }) => {
   return (

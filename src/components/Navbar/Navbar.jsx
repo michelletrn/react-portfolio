@@ -1,5 +1,6 @@
 import React from "react";
-import { mtlogo } from "../assets";
+import { mtlogo } from "../../assets";
+import "./Navbar.css"
 
 
 

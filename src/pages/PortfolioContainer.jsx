@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-import Home from "./Home";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Sidebar from "../components/Sidebar";
+import About from "./About/About";
+import Portfolio from "./Portfolio/Portfolio";
+// import Contact from "./Contact/Contact";
+import Home from "./Home/Home";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import Sidebar from "../components/Sidebar/Sidebar";
 // import Menu from "../components/Menu";
 import "../App.css";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("home");
 
-  console.log(currentPage);
+  // console.log(currentPage);
   return (
     <>
       {/* passing the currentPage from state  as prop and the function to update it */}
@@ -25,10 +25,9 @@ export default function PortfolioContainer() {
       )}
       {currentPage === "about" && <About />}
       {currentPage === "portfolio" && <Portfolio />}
-      {currentPage === "contact" && <Contact />}
+      {/* {currentPage === "contact" && <Contact />} */}
       <Sidebar />
       {/* </div> */}
-
       <Footer />
     </>
   );

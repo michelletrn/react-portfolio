@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: 5% 0;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+.social-icons-footer li {
+  display: inline;
+  margin: 0% 1%;
+  opacity: 50%;
+}
+
+.social-icons-footer li i,
+.social-icons-footer a {
+  font-size: 24px;
+}

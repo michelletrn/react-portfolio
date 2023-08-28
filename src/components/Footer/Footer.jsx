@@ -1,15 +1,11 @@
 import React from "react";
-import { resume } from "../assets";
+import "./Footer.css"
 
-function Sidebar() {
+function Footer() {
   return (
-    <div id="sidebar">
-      <ul>
-        {/* <li id="cv">
-          <a target="_blank" href={resume} className="resume">
-            CV
-          </a>
-        </li> */}
+    <footer>
+      <ul className="social-icons-footer">
+        <h2>Contact</h2>
         <li>
           <a
             id="email-icon"
@@ -25,7 +21,7 @@ function Sidebar() {
             href="https://www.linkedin.com/in/m-chelletran/"
             target="_blank"
           >
-            <i className="bx bxl-linkedin"></i>
+            <i class='bx bxl-linkedin-square'></i>
           </a>
         </li>
         <li>
@@ -38,8 +34,9 @@ function Sidebar() {
           </a>
         </li>
       </ul>
-    </div>
+      <p>created by Michelle Tran</p>
+    </footer>
   );
 }
 
-export default Sidebar;
+export default Footer;

@@ -1,5 +1,6 @@
 import React from "react";
-import { abt } from "../assets";
+import { abt } from "../../assets";
+import "./About.css"
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
               how it allows me the space to express myself.
               <br />
               <br />
-              Hobbies: Games ( mostly Valorant ), Gymming, Singing, Hanging out
+              Hobbies: Games ( Valorant ), Gymming, Singing, Hanging out
               with my family
             </p>
 

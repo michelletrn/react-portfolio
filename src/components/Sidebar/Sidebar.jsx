@@ -1,16 +1,10 @@
 import React from "react";
-import { resume } from "../assets";
+import "./Sidebar.css"
 
-function Footer() {
+function Sidebar() {
   return (
-    <footer>
-      <ul className="social-icons-footer">
-        <h2>Contact</h2>
-        {/* <li>
-          <a target="_blank" href={resume}>
-            CV
-          </a>
-        </li> */}
+    <div id="sidebar">
+      <ul>
         <li>
           <a
             id="email-icon"
@@ -26,7 +20,7 @@ function Footer() {
             href="https://www.linkedin.com/in/m-chelletran/"
             target="_blank"
           >
-            <i className="bx bxl-linkedin"></i>
+            <i class='bx bxl-linkedin-square'></i>
           </a>
         </li>
         <li>
@@ -39,9 +33,8 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <p>created by Michelle Tran</p>
-    </footer>
+    </div>
   );
 }
 
-export default Footer;
+export default Sidebar;
