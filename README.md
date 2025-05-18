@@ -29,6 +29,3 @@ MIT
 
 Contributors: Michelle Tran
 
-If you have any questions, please contact:
-
-Github: Michelletrn, Email: tranmichelle997@gmail.com
